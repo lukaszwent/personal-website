@@ -1,21 +1,18 @@
 {
   "compilerOptions": {
-    "composite": true,
-    "declarationMap": true,
-    "emitDeclarationOnly": true,
-    "importHelpers": true,
-    "isolatedModules": true,
-    "lib": ["es2022"],
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "noEmitOnError": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "skipLibCheck": true,
+    "rootDir": "./apps",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
     "strict": true,
-    "target": "es2022",
-    "customConditions": ["development"]
+    "baseUrl": ".",
+    "paths": {
+      "@tech-blog/apps/shared-ui": ["apps/shared-ui/src/index.ts"]
+    }
   }
 }
