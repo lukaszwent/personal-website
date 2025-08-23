@@ -4,12 +4,12 @@ Goal: Provide the base Nx structure (Angular frontend + Spring backend) aligned 
 
 Scope:
 - Verify existing Nx structure (already present) and refine backend domain packages.
-- Add basic backend layers: `domain`, `application`, `infrastructure`, `presentation`.
+- Add basic backend layers: `domain`, `application`, `infrastructure`, `monolith`.
 - Establish naming conventions and commit style.
 - Configure basic npm scripts (lint, test, format, affected, build).
 
 Steps:
-1. Create backend packages/layers (Java packages) if missing: `io.github.<project>.domain`, `application`, `infrastructure`, `presentation`.
+1. Create backend packages/layers (Java packages) if missing: `io.github.<project>.domain`, `application`, `infrastructure`, `monolith`.
 2. Add `CONTRIBUTING.md` with brief guidelines (commit convention, code style).
 3. Configure formatting (Prettier/ESLint) and `spotless`/`checkstyle` (optional) for backend.
 4. Verify/augment `nx.json` and `project.json` to have targets: build, test, lint.
